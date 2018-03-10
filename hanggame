@@ -3,7 +3,7 @@
 <head>
     <title>Hangman!</title>
     <script type="text/javascript">
-     function image() {
+     function image(count) {
 		if (count == 1) {
 			document.write("   |");
 			document.write("   |");
@@ -75,7 +75,7 @@ var words = ["robot","agent","cognitive","automata","chatbot","heuristics","fuzz
       answerArray[i] = "_";
     }
     var count=0;
-    while(count<5 && answerArray.includes("_") {
+    while(count<6 && answerArray.includes("_") {
       alert(answerArray.join(" "));
       var guess = prompt("Guess a letter:");
       if (guess == null) {
@@ -91,7 +91,7 @@ var words = ["robot","agent","cognitive","automata","chatbot","heuristics","fuzz
           }
           else{
             count++;
-            image();
+            image(count);
           }
         } 
       }
