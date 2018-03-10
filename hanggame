@@ -46,11 +46,9 @@
 			document.write("   |           |");
 			document.write("   |");
 			document.write("___|___");
-			document.write("Do you want hint?");
-			Scanner sc=new Scanner(System.in);
-			String hint=sc.next();
-			if(hint.equals("yes"))
-			   document.write("HINT: The word is related to Artificial Intelligence");
+			var hint=promt("Do you want hint?");
+			if(hint=="yes")
+			   alert("HINT: The word is related to Artificial Intelligence");
 		}
 		if (count == 5) {
 			document.write("Sorry try to prove your intelligence next time!");
@@ -70,7 +68,7 @@
 </head>
 <body>
 <script type="text/javascript">
-var words = ["r o b o t ","a g e n t ","c o g n i t i v e ","a u t o m a t a ","c h a t b o t ","h e u r i s t i c s ","f u z z y ","l i s p ","l o g i s t i c s ","m e c h a t r o n i c s ","p r o l o g ","h u m a n o i d ","b o t s ","s e a r c h ","c h a i n i n g ","e n t a i l m e n t ","p r u n i n g ","p e r c e p t ","s h e l l ","g a m i n g ","r e a s o n i n g ","a c t u a t o r ","s e n s o r ","n e u r a l n e t w o r k ","k n o w l e d g e b a s e "];
+var words = ["robot","agent","c o g n i t i v e ","a u t o m a t a ","c h a t b o t ","h e u r i s t i c s ","f u z z y ","l i s p ","l o g i s t i c s ","m e c h a t r o n i c s ","p r o l o g ","h u m a n o i d ","b o t s ","s e a r c h ","c h a i n i n g ","e n t a i l m e n t ","p r u n i n g ","p e r c e p t ","s h e l l ","g a m i n g ","r e a s o n i n g ","a c t u a t o r ","s e n s o r ","n e u r a l n e t w o r k ","k n o w l e d g e b a s e "];
     var word = words[Math.floor(Math.random() * words.length)];
     var answerArray = [];
     for (var i = 0; i < word.length; i++) {
